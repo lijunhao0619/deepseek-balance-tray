@@ -1,0 +1,41 @@
+﻿{
+    "dataSource":  "platform",
+    "apiKey":  "只有把 dataSource 改成 balance 时才需要填（sk- 开头）",
+    "baseUrl":  "https://api.deepseek.com",
+    "refreshSeconds":  60,
+    "lowThreshold":  20.0,
+    "criticalThreshold":  5.0,
+    "preferCurrency":  "CNY",
+    "iconMode":  "amount",
+    "iconShowSymbol":  false,
+    "notifyOnLow":  true,
+    "notifyOnDrop":  false,
+    "timeoutSeconds":  20,
+    "proxy":  "",
+    "nodePath":  "",
+    "usageIconMetric":  "cost",
+    "dailyWarnCost":  5.0,
+    "dailyCriticalCost":  20.0,
+    "usageHistoryDays":  14,
+    "pricing":  {
+                    "peakMultiplier":  2,
+                    "tzOffsetHours":  8,
+                    "defaultModel":  "deepseek-flash",
+                    "models":  {
+                                   "deepseek-flash":  {
+                                                          "cacheHit":  0.02,
+                                                          "cacheMiss":  1.0,
+                                                          "output":  4.0
+                                                      },
+                                   "deepseek-v4-pro":  {
+                                                           "cacheHit":  0.15,
+                                                           "cacheMiss":  4.5,
+                                                           "output":  13.5
+                                                       }
+                               },
+                    "holidays":  [
+
+                                 ]
+                },
+    "notifyOnStart":  true
+}
